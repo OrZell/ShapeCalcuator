@@ -40,4 +40,3 @@ class Rectangle(Shape):
 
     def __gt__(self, other):
         return self.get_area() > other.get_area()
-
