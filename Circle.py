@@ -1,4 +1,4 @@
-import math
+from math import pi
 import  Shape
 
 class Circle(Shape):
@@ -9,7 +9,13 @@ class Circle(Shape):
         self.Radius = radius
 
     def get_area(self):
-        return self.Radius*2*math.pi
+        return self.Radius*2*pi
+
+    def get_perimeter(self):
+        return pi*pow(self.Radius, 2)
 
     def __str__(self):
         return f'Kind: {self.Name}, Radius: {self.Radius}'
+
+    def __add__(self, other):
+        return self.get_area() + other.get_area()
