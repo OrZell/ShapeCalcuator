@@ -3,6 +3,7 @@ import Shape
 class Rectangle(Shape):
 
     def __init__(self, a, b):
+        super().__init__()
         self.Name = 'Rectangle'
         self.A = a
         self.B = b

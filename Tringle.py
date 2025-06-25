@@ -1,14 +1,13 @@
-import Shape
+import Rectangle
 
-class Tringle(Shape):
+class Tringle(Rectangle):
 
     def __init__(self ,a, b):
+        super().__init__(a, b)
         self.Name = 'Tringle'
-        self.A = a
-        self.B = b
 
     def get_area(self):
-        return (self.A * self.B)/2
+        return super().get_area()/2
 
     def __str__(self):
-        return f'Kind: {self.Name}, A: {self.A}, B: {self.B}'
+        return super().__str__()

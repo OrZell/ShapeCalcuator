@@ -1,13 +1,13 @@
-import  Shape
+import  Rectangle
 
-class Square(Shape):
+class Square(Rectangle):
 
     def __init__(self, a):
+        super().__init__(a, a)
         self.Name = 'Square'
-        self.A = a
 
     def get_area(self):
-        return pow(self.A, 2)
+        return super().get_area()
 
     def __str__(self):
         return f'Kind: {self.Name}, A: {self.A}'
