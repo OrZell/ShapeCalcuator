@@ -4,6 +4,7 @@ import  Shape
 class Circle(Shape):
 
     def __init__(self, radius):
+        super().__init__()
         self.Name = 'Circle'
         self.Radius = radius
 
