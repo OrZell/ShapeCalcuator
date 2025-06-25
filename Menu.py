@@ -10,7 +10,7 @@ import Hexagon
 class Menu:
 
     @staticmethod
-    def menu(self):
+    def menu():
         choice = 0
         user_input = input("Please choose the shape you want to calculate:\n"
                           "1. Rectangle\n"
