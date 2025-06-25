@@ -2,16 +2,18 @@ from math import pi
 from Shape import Shape
 
 class Circle(Shape):
-
+    """Shape type Circle"""
     def __init__(self, radius):
         super().__init__()
         self.Name = 'Circle'
         self.Radius = radius
 
     def get_area(self):
+        """Calculate ethe area"""
         return self.Radius*2*pi
 
     def get_perimeter(self):
+        """Calculate ethe perimeter"""
         return pi*pow(self.Radius, 2)
 
     def __str__(self):

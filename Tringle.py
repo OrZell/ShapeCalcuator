@@ -1,15 +1,17 @@
 from Rectangle import Rectangle
 
 class Tringle(Rectangle):
-
+    """Shape type Tringle"""
     def __init__(self ,a, b):
         super().__init__(a, b)
         self.Name = 'Tringle'
 
     def get_area(self):
+        """Calculate ethe area"""
         return super().get_area()/2
 
     def get_perimeter(self):
+        """Calculate ethe perimeter"""
         return super().get_perimeter()/2
 
     def __str__(self):

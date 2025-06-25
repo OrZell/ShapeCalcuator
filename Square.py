@@ -1,15 +1,17 @@
 from Rectangle import Rectangle
 
 class Square(Rectangle):
-
+    """Shape type Square"""
     def __init__(self, a):
         super().__init__(a, a)
         self.Name = 'Square'
 
     def get_area(self):
+        """Calculate ethe area"""
         return super().get_area()
 
     def get_perimeter(self):
+        """Calculate ethe Perimeter"""
         return super().get_perimeter()
 
     def __str__(self):

@@ -1,16 +1,18 @@
 from Shape import  Shape
 
 class Hexagon(Shape):
-
+    """Shape type Hexagon"""
     def __init__(self, a):
         super().__init__()
         self.Name = 'Hexagon'
         self.A = a
 
     def get_area(self):
+        """Calculate ethe area"""
         return pow(self.A, 2)*(3 * (pow(3, 0.5)) / 2)
 
     def get_perimeter(self):
+        """Calculate ethe perimeter"""
         return self.A * 6
 
     def __str__(self):

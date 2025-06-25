@@ -1,17 +1,20 @@
 from Shape import Shape
 
 class Rectangle(Shape):
-
+    """Shape type Rectangle"""
     def __init__(self, a, b):
+        """Gets two parameters of length and width"""
         super().__init__()
         self.Name = 'Rectangle'
         self.A = a
         self.B = b
 
     def get_area(self):
+        """Calculate ethe area"""
         return self.A * self.B
 
     def get_perimeter(self):
+        """Calculate ethe perimeter"""
         return (self.A + self.B)*2
 
     def __str__(self):
