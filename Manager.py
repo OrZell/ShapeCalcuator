@@ -1,4 +1,4 @@
-import Menu
+from Menu import Menu
 
 class Manager:
 
@@ -6,7 +6,7 @@ class Manager:
     def MainMenu():
         sign = True
         while sign:
-            choice = Menu.Menu.menu()
+            choice = Menu.menu()
             if choice == 0:
                 print('Not valid Input, Try Again.')
                 continue
@@ -14,5 +14,5 @@ class Manager:
                 print('Bye Bye')
                 sign = False
                 continue
-            shape = Menu.Menu.check_shape(choice)
-            print(Menu.Menu.return_area(shape))
+            shape = Menu.check_shape(choice)
+            print(Menu.return_area(shape))

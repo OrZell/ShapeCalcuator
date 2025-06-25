@@ -1,9 +1,9 @@
-import Shape
-import Rectangle
-import Square
-import Tringle
-import Circle
-import Hexagon
+from Shape import Shape
+from Rectangle import Rectangle
+from Square import Square
+from Tringle import Tringle
+from Circle import Circle
+from Hexagon import Hexagon
 
 
 
@@ -56,9 +56,9 @@ class Menu:
         if  len(sides) != 2:
             raise 'Err'
 
-        for i in sides:
+        for i in range(len(sides)):
             try:
-                int(i)
+                sides[i] = int(sides[i])
             except:
                 raise 'Err'
         return sides
@@ -67,19 +67,20 @@ class Menu:
     def check_shape(num):
         if num == 1:
             sides = Menu.enter_two_sides()
-            shape = Rectangle.Rectangle(sides[0], sides[1])
+            shape = Rectangle(sides[0], sides[1])
         elif num == 2:
             side = Menu.enter_one_side()
-            shape = Square.Square(side)
+            shape = Square(side)
         elif num == 3:
             sides = Menu.enter_two_sides()
-            shape = Tringle.Tringle(sides[0], sides[1])
+            shape = Tringle(sides[0], sides[1])
         elif num == 4:
             radius = Menu.enter_radius()
-            shape = Circle.Circle(radius)
+            shape = Circle(radius)
         elif num == 5:
             side = Menu.enter_one_side()
-            shape = Hexagon.Hexagon(side)
+            shape = Hexagon(side)
+        return shape
 
     @staticmethod
     def return_area(shape:Shape):
