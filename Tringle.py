@@ -16,4 +16,25 @@ class Tringle(Rectangle):
         return super().__str__()
 
     def __add__(self, other):
-        return super().__add__()/2
+        return super().__add__(other)/2
+
+    def __len__(self):
+        return self.get_perimeter()
+
+    def __lt__(self, other):
+        return super().__lt__(other)
+
+    def __le__(self, other):
+        return super().__le__(other)
+
+    def __eq__(self, other):
+        return super().__eq__(other)
+
+    def __ne__(self, other):
+        return super().__ne__(other)
+
+    def __ge__(self, other):
+        return super().__ge__(other)
+
+    def __gt__(self, other):
+        return super().__gt__(other)
